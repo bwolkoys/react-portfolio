@@ -12,7 +12,13 @@
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.28.0"
+    "react-router-dom": "^6.28.0",
+    "@testing-library/jest-dom": "^5.11.6",
+    "@testing-library/react": "^11.2.2",
+    "@testing-library/user-event": "^12.6.0",
+    "bootstrap": "^4.5.3",
+    "react-bootstrap": "^1.4.0",
+    "react-scripts": "3.4.1"
   },
   "devDependencies": {
     "@types/react": "^18.2.15",
