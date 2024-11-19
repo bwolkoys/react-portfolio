@@ -40,6 +40,8 @@ In this module I created a portfolio built with react and deployed on netlify. I
 - https://www.geeksforgeeks.org/react-onchange-event/ 
 - https://www.epicreact.dev/how-to-type-a-react-form-on-submit-handler 
 - https://reactrouter.com/en/main/router-components/browser-router 
+- Module 20, Student activity 28
+- Module 20, activity 24 /src
 
 ## Link to Netlify
 - https://bradyn-portfolio.netlify.app/ 
