@@ -1,6 +1,7 @@
 # React Portfolio
 
 ## Description
+In this module I created a portfolio built with react and deployed on netlify. In my portfolio you cna find an about section, portfolio, contact and resume sections. In the footer, I have also linked my github, linkedin and module 2 project (front end portfolio). Hope you enjoy!
 
 ## User Story
 - AS AN employer looking for candidates with experience building single-page applications
@@ -39,3 +40,6 @@
 - https://www.geeksforgeeks.org/react-onchange-event/ 
 - https://www.epicreact.dev/how-to-type-a-react-form-on-submit-handler 
 - https://reactrouter.com/en/main/router-components/browser-router 
+
+## Link to Netlify
+- https://bradyn-portfolio.netlify.app/ 
