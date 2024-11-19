@@ -88,7 +88,7 @@ function Contact() {
               id="message"
             />
             {/* submit button*/}
-            <button type="button">
+            <button type="submit">
               Submit
             </button>
           </form>
