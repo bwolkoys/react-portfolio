@@ -22,32 +22,42 @@ function Contact() {
       };
     
       const formChange = (e) => {
-        if (e.target.name === 'email') {
-          const isValid = validateEmail(e.target.value);
-          if (!isValid) {
-            setErrorMessage('Email is invalid.');
-          } else {
-            setErrorMessage('');
-          }
-        } else {
-          if (!e.target.value.length) {
-            setErrorMessage(`${e.target.name} is required.`);
-          } else {
-            setErrorMessage('');
-          }
+        e.preventDefault();
+        if (!email || !userName || !message ) {
+          setErrorMessage("All of the fields are required");
+          return;
         }
-        if (!errorMessage) {
-          setFormState({ ...formState, [e.target.name]: e.target.value });
-          console.log('Handle Form', formState);
-        }
-      };
+
+        setErrorMessage('');
+      }
+
+      // const formChange = (e) => {
+      //   if (e.target.name === 'email') {
+      //     const isValid = validateEmail(e.target.value);
+      //     if (!isValid) {
+      //       setErrorMessage('Email is invalid.');
+      //     } else {
+      //       setErrorMessage('');
+      //     }
+      //   } else {
+      //     if (!e.target.value.length) {
+      //       setErrorMessage(`${e.target.name} is required.`);
+      //     } else {
+      //       setErrorMessage('');
+      //     }
+      //   }
+      //   if (!errorMessage) {
+      //     setFormState({ ...formState, [e.target.name]: e.target.value });
+      //     console.log('Handle Form', formState);
+      //   }
+      // };
 
       return (
         <section id="contact" className="contact"> 
         <div>
         <div className="contact-form">
           <h3>Contact Me</h3>
-          <form className="form">
+          <form className="form" onSubmit={formChange}>
             {/* userName */}
             <label for="name">Name</label>
             <input
@@ -78,7 +88,7 @@ function Contact() {
               id="message"
             />
             {/* submit button*/}
-            <button type="button" onClick={formChange}>
+            <button type="button">
               Submit
             </button>
           </form>
