@@ -1,8 +1,8 @@
 import React from "react";
 
-import PersonalBlog from "../../assets/PersonalBlog";
-import LogoMaker from "../../assets/LogoMaker";
-import TaskBoard from "../../assets/TaskBoard";
+import PersonalBlog from "../assets/PersonalBlog.jpg";
+import LogoMaker from "../assets/LogoMaker.jpg";
+import TaskBoard from "../assets/TaskBoard.jpg";
 
 function Portfolio() {
   return (

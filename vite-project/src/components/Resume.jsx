@@ -1,4 +1,5 @@
 import React from "react";
+import ResumeImg from "../assets/Resume.jpg";
 
 function Resume() {
     return (
@@ -8,9 +9,18 @@ function Resume() {
                 <h1 className="page-header">My Resume</h1>
             </div>
             <div className="bottom-spacing">
-                <a href={require("../../assets/Resume.jpg")} download>
-                    <h4>Download My Resume</h4>
-                </a>
+                {/* <a href={require("../assets/Resume.jpg")}> */}
+                    <h4>My Resume</h4>
+                    <a>
+                <img
+                  src={ResumeImg}
+                  className="my-2"
+                  style={{ width: "100%" }}
+                  alt="Resume"
+                />
+              </a>
+
+                {/* </a> */}
             </div>
             <div>
                 <p className="column-text">

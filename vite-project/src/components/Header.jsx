@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Navigation from "./Navigation";
 
 import About from "./About";
@@ -42,8 +42,8 @@ function Header() {
           </div>
         </header>
       </section>
-      <section class="hero">
-        <div class="hero-cta">
+      <section className="hero">
+        <div className="hero-cta">
           <h2>Welcome!</h2>
           <p>
             Welcome to my portfolio built with React. You can find sample projects, more about me and contact info. Hope you enjoy!
