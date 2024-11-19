@@ -34,6 +34,7 @@ function App() {
 			</div>
 			<div>
 				{/* <main>{renderTab()}</main> */}
+				{/* using react router to define routes. routes defines different routes with specific paths to their specific components */}
         <Router>
       <Routes>
         <Route path="/" element={<About />} />
