@@ -35,3 +35,6 @@
 - THEN I am presented with text or icon links to the developer’s GitHub and LinkedIn profiles, and their profile on a third platform (Stack Overflow, Twitter) 
 
 ## Resources
+- https://www.w3schools.com/react/react_usestate.asp 
+- https://www.geeksforgeeks.org/react-onchange-event/ 
+- https://www.epicreact.dev/how-to-type-a-react-form-on-submit-handler 

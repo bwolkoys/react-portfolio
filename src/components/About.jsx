@@ -1,3 +1,4 @@
+//importing react
 import React from "react";
 import Profile from "../assets/profile.jpg"
 
@@ -12,6 +13,7 @@ function About() {
         <div className="flex-row">
           <div className="intro-info">
             <div className="my-image">
+              {/* rendering profile image so it's displayed using the img tag and src attribute */}
               <img src={Profile} style={{ width: "30%" }} alt="Bradyn's profile picture" />
             </div>
             <p>

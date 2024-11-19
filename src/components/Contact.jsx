@@ -2,12 +2,14 @@ import React, { useState } from 'react';
 //import { validateEmail } from '../utils/helpers';
 
 function Contact() {
+  //uses the useState hook and creates 4 pieces: email, userName, message and errormessage
     const [email, setEmail] = useState("");
     const [userName, setUserName] = useState("");
     const [message, setMessage] = useState("");
     const [errorMessage, setErrorMessage] = useState("");
 
     const inputChange = (e) => {
+      //for when an input field changes, it will then update the state based on what was inputted
         const { target } = e;
         const inputType = target.name;
         const inputValue = target.value;
@@ -22,6 +24,7 @@ function Contact() {
       };
     
       const formChange = (e) => {
+        //when a form is submitted, this is called. it also checks if any of the fields are empty, if so it will show an error message 
         e.preventDefault();
         if (!email || !userName || !message ) {
           setErrorMessage("All of the fields are required");

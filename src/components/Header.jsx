@@ -8,10 +8,12 @@ import Resume from "./Resume";
 
 
 function Header() {
+  //using useState hook to connect it to the about page as the current page
     const [currentPage, handlePageChange] = useState("About");
   
     // Taken from module 20, activity 24 src/main.jsx
     const renderPage = () => {
+      //renderes each page based on the current page
       switch (currentPage) {
         case "About":
           return <About />;
@@ -36,6 +38,7 @@ function Header() {
           </div>
           <div>
             <Navigation
+            // this passes current page and handle page change as props. this allows someone to navigate between pages
               currentPage={currentPage}
               handlePageChange={handlePageChange}
             ></Navigation>
