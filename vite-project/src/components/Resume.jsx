@@ -10,12 +10,12 @@ function Resume() {
             </div>
             <div className="bottom-spacing">
                 {/* <a href={require("../assets/Resume.jpg")}> */}
-                    <h4>My Resume</h4>
+                    {/* <h4>My Resume</h4> */}
                     <a>
                 <img
                   src={ResumeImg}
                   className="my-2"
-                  style={{ width: "100%" }}
+                  style={{ width: "60%" }}
                   alt="Resume"
                 />
               </a>
@@ -24,7 +24,7 @@ function Resume() {
             </div>
             <div>
                 <p className="column-text">
-                    <ul>
+                    <ul> Some of the things I've learned in the bootcamp:
                         <li>HTML5</li>
                         <li>CSS</li>
                         <li>JavaScript</li>
@@ -40,6 +40,7 @@ function Resume() {
                 </p>
             </div>
         </section>
+        <br></br>
     </div>
   )
 };
